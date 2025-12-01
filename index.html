@@ -7,14 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
     <meta name="x-apple-disable-message-reformatting">
-    <!-- <meta name="color-scheme" content="light dark">
-    <meta name="supported-color-schemes" content="light dark"> -->
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <title>HTML Email Template Boilerplate</title>
+
+    <!--[if mso]>
+    <noscript>
+        <xml>
+            <o:OfficeDocumentSettings>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+                <o:AllowPNG></o:AllowPNG>
+            </o:OfficeDocumentSettings>
+        </xml>
+    </noscript>
+    <![endif]-->
 
     <style type="text/css">
-        table {
+        /* table {
             border-spacing: 0;
             border-collapse: collapse;
-        }
+        } */
 
         td {
             padding: 0;
@@ -58,16 +70,113 @@
             text-decoration: inherit !important;
         }
 
-        @media screen and (max-width:599.98) {}
+        @media screen and (max-width:599.98px) {}
 
-        @media screen and (max-width:399.98) {}
+        @media screen and (max-width:399.98px) {}
+
+        :root {
+            color-scheme: light dark;
+            supported-color-schemes: light dark;
+        }
+
+        @media(prefers-color-scheme:dark) {
+
+            body,
+            table {
+                background: #2d2d2d !important;
+                color: #fff !important
+            }
+
+            .darkmode-transparent {
+                background: transparent !important;
+            }
+
+            [data-ogsb] h1 {
+                background-color: #00ff00 !important;
+
+            }
+
+            [data-ogsc] h1 {
+                color: #0000ff !important;
+
+            }
+
+            [data-ogsc] h2,
+            h3 {
+                background-color: #00ff00 !important;
+                color: #0000ff !important;
+
+            }
+        }
     </style>
-    <title>HTML Email Template Boilerplate</title>
+    <!--[if mso]>
+    <style type="text/css">
+    body {
+    backgrounbd-color: #dde0e1 !important;
+    }
+    </style>
+  <![endif]-->
 </head>
 
-<body>
-    Hello
-
+<body class="body" xml:lang="en" style="margin: 0; padding: 0; background-color: #dde0e1;">
+    <div
+        style="width: 100%; table-layout: fixed; background: #dde0e1; color:#3d3d3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; margin: 0 auto 40px; ">
+        <div
+            style="max-width: 600px; background-color: #fafdfe; color:#3d3d3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; box-shadow: 0 0 10px rgba(0,0,0,.6); margin: 0 auto;">
+            <div
+                style="font-size:0; color: #fafdfe; mso-line-height-rule: exactly; line-height:0px; display: none; opacity: 0; max-height:0; max-width:0; overflow:hidden; mso-hide:all;">
+                preheader text
+                &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847;&#8199;&#847;
+                &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847;&#8199;&#847; &#8199;&#847;
+                &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847;
+                &#8199;&#847; &#8199;&#847; &#8199;&#847;&#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847;
+                &#8199;&#847; &#8199;&#847;&#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847;
+                &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847;
+                &#8199;&#847;&#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847;
+                &#8199;&#847;&#8199;&#847;
+                &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                &shy;
+                &nbsp;
+            </div>
+            <!-- EXTRA TABLE FOR OUTLOOK -->
+            <!--[if mso]>
+            <table width="600" align="center" role="presentation"
+                style="border-spacing: 0; border-collapse: collapse; color: #3d3d3d;">
+                <tr>
+                    <td style="padding: 0;">
+                        <![endif]-->
+            <!-- MAIN TABLE -->
+            <table align="center" role="presentation"
+                style="border-spacing: 0; border-collapse: collapse; color: #3d3d3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; background-color: #fafdfe; margin: 0 auto; padding: 0; width: 100%; max-width:600px;">
+                <tr>
+                    <td>
+                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                            <tr>
+                                <td style="padding: 10px;">
+                                    <h1 style="text-align: center; font-size: 30px;">Thank you for your
+                                        purchase</h1>
+                                    <h2 style="text-align: center; font-size: 26px;">Thank you for your
+                                        purchase</h2>
+                                    <h3 style="text-align: center; font-size: 22px;">Thank you for your
+                                        purchase</h3>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <!--[if mso]>    
+            </tr>
+            </td>
+            </tr>
+            </table>
+                <![endif]-->
+            </table>
+        </div>
 </body>
 
 </html>
