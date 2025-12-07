@@ -9,19 +9,16 @@
     <meta name="x-apple-disable-message-reformatting">
     <meta name="color-scheme" content="light dark">
     <meta name="supported-color-schemes" content="light dark">
-    <title>HTML Email Template Boilerplate</title>
-
+    <title>Responsive HTML Email Columns</title>
     <!--[if mso]>
-    <noscript>
-        <xml>
+      <noscript>
+         <xml>
             <o:OfficeDocumentSettings>
-                <o:PixelsPerInch>96</o:PixelsPerInch>
-                <o:AllowPNG></o:AllowPNG>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
             </o:OfficeDocumentSettings>
-        </xml>
-    </noscript>
-    <![endif]-->
-
+         </xml>
+      </noscript>
+   <![endif]-->
     <style type="text/css">
         table {
             border-spacing: 0;
@@ -32,10 +29,9 @@
             padding: 0;
         }
 
-        /* 
         p {
             font-size: 16px;
-        } */
+        }
 
         img {
             border: 0;
@@ -44,7 +40,7 @@
         a {
             text-decoration: none;
             color: #3d3d3d;
-            /* font-size: 16px; */
+            font-size: 16px;
         }
 
         .content {
@@ -52,8 +48,18 @@
             font-size: 16px;
         }
 
+        u+.body .gmail-blend-screen {
+            background: #000;
+            mix-blend-mode: screen;
+        }
+
+        u+.body .gmail-blend-difference {
+            background: #000;
+            mix-blend-mode: difference;
+        }
+
         .ExternalClass {
-            width: 100%
+            width: 100%;
         }
 
         .ExternalClass,
@@ -63,7 +69,6 @@
         .ExternalClass td,
         .ExternalClass div {
             line-height: 100%;
-
         }
 
         a[x-apple-data-detectors=true] {
@@ -71,159 +76,277 @@
             text-decoration: inherit !important;
         }
 
-        @media screen and (max-width:599.98px) {}
+        /*-- SIMPLE TWO COLUMNS LESSON --*/
 
-        @media screen and (max-width:399.98px) {}
+        /*-- END SIMPLE TWO COLUMNS LESSON --*/
 
-        /* 
-        :root {
-            color-scheme: light dark;
-            supported-color-schemes: light dark;
-        }
+        /*-- THIRDS SECTION --*/
 
-        @media(prefers-color-scheme:dark) {
+        /*-- END THIRDS SECTION --*/
 
-            body,
-            table {
-                background: #2d2d2d !important;
-                color: #fff !important
-            }
+        @media screen and (max-width: 599.98px) {}
 
-            [data-ogsc] h2,
-            h3 {
-                background-color: #00ff00 !important;
-                color: #0000ff !important;
+        @media screen and (max-width: 399.98px) {}
 
-            }
-        } */
+        /*
+      :root {
+         color-scheme: light dark;
+         supported-color-schemes: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+         body, table {
+            background: #2d2d2d !important;
+            color: #ffffff !important;
+         }
+         [data-ogsc] body, table {
+            background: #2d2d2d !important;
+            color: #ffffff !important;
+         }
+         .column-title {
+            color: #3d3d3d!important;
+         }
+         [data-ogsc] .column-title {
+            color: #3d3d3d!important;
+         }
+      } */
     </style>
+
     <!--[if mso]>
-    <style type="text/css">
-    body {
-    backgrounbd-color: #dde0e1 !important;
-    }
-    </style>
-  <![endif]-->
+		<style type="text/css">
+			body {background-color: #dde0e1 !important;}
+         body, table, td, p, a {font-family: Arial, Helvetica, sans-serif !important;}
+         table {border-spacing: 0 !important;border-collapse: collapse !important;}
+		</style>
+	<![endif]-->
+
 </head>
 
-<body class="body" xml:lang="en" style="margin: 0; padding: 0; background-color: #dde0e1;">
+<body class="body" xml:lang="en" style="margin:0;padding:0;min-width:100%;background-color:#dde0e1;">
+
     <div
-        style="width: 100%; table-layout: fixed; background: #dde0e1; color:#3d3d3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; margin: 0 auto 40px; ">
+        style="width: 100%; table-layout:fixed; background-color: #dde0e1; color:#3d3d3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; margin: 0 auto 40px;">
         <div
-            style="max-width: 600px; background-color: #fafdfe; color:#3d3d3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; box-shadow: 0 0 10px rgba(0,0,0,.6); margin: 0 auto;">
+            style="max-width: 600px; background-color: #fafdfe; color:#3d3d3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; box-shadow: 0 0 10px rgba(0, 0, 0, .2);margin: 0 auto;">
+
             <div
-                style="font-size:0; color: #fafdfe; mso-line-height-rule: exactly; line-height:0px; display: none; opacity: 0; max-height:0; max-width:0; overflow:hidden; mso-hide:all;">
-                preheader text
-                &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847;&#8199;&#847;
-                &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847;&#8199;&#847; &#8199;&#847;
-                &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847;
-                &#8199;&#847; &#8199;&#847; &#8199;&#847;&#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847;
-                &#8199;&#847; &#8199;&#847;&#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847;
-                &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847;
-                &#8199;&#847;&#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847;
-                &#8199;&#847;&#8199;&#847;
-                &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
-                &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
-                &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
-                &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
-                &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
-                &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
-                &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
-                &shy;
-                &nbsp;
+                style="font-size: 0px; color: #fafdfe; mso-line-height-rule: exactly; line-height: 0px; display: none; max-width: 0px; max-height: 0px; opacity: 0; overflow: hidden; mso-hide:all;">
+                This is our preheader text which can be 35-190 characters but 85-100 is recommended.
+                &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;
             </div>
-            <!-- EXTRA TABLE FOR OUTLOOK -->
+
             <!--[if mso]>
-            <table width="600" align="center" role="presentation"
-                style="border-spacing: 0; border-collapse: collapse; color: #3d3d3d;">
+            <table width="600" align="center" style="border-spacing: 0; border-collapse:collapse; color: #3d3d3d;" role="presentation">
+            <tr>
+            <td style="padding:0;">
+         <![endif]-->
+
+            <table align="center"
+                style="border-spacing:0; border-collapse: collapse; color:#3d3d3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; background-color: #fafdfe; margin: 0 auto; padding:0; width: 100%; max-width: 600px;"
+                role="presentation">
+
+
+                <!-- SIMPLE TWO COLUMNS -->
                 <tr>
-                    <td style="padding: 0;">
-                        <![endif]-->
-            <!-- MAIN TABLE -->
-            <table align="center" role="presentation"
-                style="border-spacing: 0; border-collapse: collapse; color: #3d3d3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; background-color: #fafdfe; margin: 0 auto; padding: 0; width: 100%; max-width:600px;">
-                <tr>
-                    <td style="padding: 0;">
-                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                    <td style="padding: 10px 0 10px;">
+                        <table width="100%" style="border-spacing:0;" role="presentation">
+
                             <tr>
-                                <td style="padding: 4px; background-color: #d5f3f4;">
-                                    <div
-                                        style="font-size: 0; mso-line-height-rule:exactly; line-height:0;display:none; mso-hide:all;">
-                                        &zwnj;&nbsp;&#847; &zwnj;&nbsp;&#847;
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 14px 0 10px 0; text-align: center;">
-                                    <a href="https://example.com" target="_blank">
-                                        <img src="https://mcusercontent.com/474f5b70c3b324277323d4c42/images/8c6d35c2-2b66-5af9-d40f-1eec9d2dcaf3.png"
-                                            alt="Logo" width="190" style="border: 0;">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 0 0 0 0;">
-                                    <a href="https://example.com/1" target="_blank">
-                                        <img src="https://mcusercontent.com/474f5b70c3b324277323d4c42/images/80657041-e007-7e23-37ed-2e10ac4f5cac.jpg"
-                                            alt="Password Reset Banner" width="600" style="border: 0; width: 100%;">
-                                    </a>
+                                <td style="background-color: #f3e1dc;padding: 12px;">
+                                    <p style="text-align: center; font-size: 22px; margin: 0;">Simple Two Columns</p>
                                 </td>
                             </tr>
 
                             <tr>
-                                <td style="padding: 5px 25px 5px 25px; text-align: center;">
-                                    <h1 style="font-size: 25px;">Did you forget something?</h1>
-                                    <h2 style="font-size: 20px;">No problem, we got you</h2>
-                                    <p style="font-size: 16px; line-height: 20px;">Hey, {{contact.FIRSTNAME}}</p>
-                                    <p style="font-size: 16px; line-height: 20px;">There was a request to change your
-                                        password</p>
-                                    <p style="font-size: 16px; line-height: 20px;">If you did not make this request,
-                                        ignore this email. Otherwise, please click the
-                                        button below to change your password</p>
-                                </td>
-                            </tr>
+                                <td class="column-wrapper"
+                                    style="padding: 0; font-size: 0; background: #b7c0ba; text-align: center;">
+                                    <table class="column column-one-half" width="100%"
+                                        style="border-spacing: 0;vertical-align: top; width: 100%; max-width: 300px; display: inline-block; background-color: #546c94; color: #fff;"
+                                        role="presentation">
+                                        <tr>
+                                            <td class="padding" style="padding: 20px; background-color: #346465;">
+                                                <a href="https://example.com">
+                                                    <img src="https://mcusercontent.com/474f5b70c3b324277323d4c42/images/a63a4362-8abd-b993-d894-ab788fdc56b8.jpg"
+                                                        width="260" alt="Description">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
 
-                            <tr>
-                                <td style="padding: 10px 0 30px 0; text-align: center;">
-                                    <a href="https://example.com/3">
-                                        <img src="https://mcusercontent.com/474f5b70c3b324277323d4c42/images/edc1f3e2-1f6e-4f6a-8f7b-5f5e3e3c4b6a.png"
-                                            alt="Reset Password Button" width="200" style="border: 0;">
-                                    </a>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td style="padding: 20px 0 30px 0; text-align: center; background-color: #dde0e1;">
-                                    <p style="font-size:16px; color: #000">
-                                        <a href="https://google.com">www.acmestores.com</a>
-                                    </p>
-                                    <p style="font-size:16px; color: #000">
-                                        <a href="https://google.com"
-                                            style="color: #000; text-decoration: none; color: inherit;">Is this
-                                            blue?</a>
-                                    </p>
-                                    <p style="font-size: 16px; padding: 5px 0; color: #000;">
-                                        123&#8203; Acme St, Suite 100, New York, NY 10001
-                                    </p>
-                                    <p style="font-size: 14px; color: #000;">
-                                        <a href="http://google.com" style="text-decoration: none; color: inherit;">
-                                            Unsubscribe
-                                        </a>
-                                    </p>
+                                    <table class="column column-one-half" width="100%"
+                                        style="border-spacing: 0;vertical-align: top; width: 100%; max-width: 300px; display: inline-block;background-color: #546c94; color: #fff;"
+                                        role="presentation">
+                                        <tr>
+                                            <td class="padding" style="padding:20px; background-color: #346565;">
+                                                <p style="font-size: 16px;">Hello and welcome to our newsletter. Lorem
+                                                    ipsum dolor sit, amet consectetur adipisicing elit. Iusto, id! Lorem
+                                                    ipsum dolor sit amet.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </td>
                             </tr>
 
                         </table>
                     </td>
                 </tr>
-                <!--[if mso]>    
-            </tr>
+                <!-- END SIMPLE TWO COLUMNS -->
+
+
+                <!-- SIMPLE TWO COLUMNS REVERSED -->
+                <tr>
+                    <td style="padding: 10px 0 10px;">
+                        <table width="100%" style="border-spacing:0;" role="presentation">
+
+                            <tr>
+                                <td style="background-color: #f3e1dc;padding: 12px;">
+                                    <p style="text-align: center; font-size: 22px; margin: 0;">Two Columns Reverse
+                                        Direction, Vertical Align Middle</p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+                <!-- END SIMPLE TWO COLUMNS REVERSED -->
+
+
+                <!-- TWO COLUMNS FLUID/HYBRID 100% RESPONSIVE WIDTH -->
+                <tr>
+                    <td style="padding: 10px 0 10px;">
+                        <table width="100%" style="border-spacing:0;" role="presentation">
+
+                            <tr>
+                                <td style="background-color: #f3e1dc;padding: 12px;">
+                                    <p style="text-align: center; font-size: 22px; margin: 0;">Two Columns Fluid/Hybrid
+                                        100% Responsive Width</p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+                <!-- END TWO COLUMNS FLUID/HYBRID 100% RESPONSIVE WIDTH -->
+
+
+
+                <!-- TWO COLUMNS FLUID/HYBRID 100% RESPONSIVE WIDTH + MSO -->
+                <tr>
+                    <td style="padding: 10px 0 10px;">
+                        <table width="100%" style="border-spacing:0;" role="presentation">
+
+                            <tr>
+                                <td style="background-color: #f3e1dc;padding: 12px;">
+                                    <p style="text-align: center; font-size: 22px; margin: 0;">Fluid/Hybrid 100% with
+                                        MSO Outlook Statements</p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+                <!-- END TWO COLUMNS FLUID/HYBRID 100% RESPONSIVE WIDTH + MSO -->
+
+
+
+                <!-- TWO COLUMNS FLUID/HYBRID 100% RESPONSIVE WIDTH + MSO REVERSED -->
+                <tr>
+                    <td style="padding: 10px 0 10px;">
+                        <table width="100%" style="border-spacing:0;" role="presentation">
+
+                            <tr>
+                                <td style="background-color: #f3e1dc;padding: 12px;">
+                                    <p style="text-align: center; font-size: 22px; margin: 0;">Fluid/Hybrid 100% - MSO
+                                        Outlook Statements Reversed</p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+                <!-- END TWO COLUMNS FLUID/HYBRID 100% RESPONSIVE WIDTH + MSO REVERSED -->
+
+
+
+                <!-- SHOWING AND HIDING OUTLOOK CONTENT WITH MSO -->
+                <tr>
+                    <td style="padding: 10px 0 10px;">
+                        <table width="100%" style="border-spacing:0;" role="presentation">
+
+                            <tr>
+                                <td style="background-color: #f3e1dc;padding: 12px;">
+                                    <p style="text-align: center; font-size: 22px; margin: 0;">Showing / Hiding Content
+                                        with MSO Outlook Statements</p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+                <!-- END SHOWING AND HIDING OUTLOOK CONTENT WITH MSO -->
+
+
+
+                <!-- TWO COLUMNS FLUID/HYBRID 100% RESPONSIVE + MSO + ROWS CONTENT ROW -->
+                <tr>
+                    <td style="padding: 10px 0 10px;">
+                        <table width="100%" style="border-spacing:0;" role="presentation">
+
+                            <tr>
+                                <td style="background-color: #f3e1dc;padding: 12px;">
+                                    <p style="text-align: center; font-size: 22px; margin: 0;">*** Fluid/Hybrid 100%
+                                        Responsive Width with MSO Outlook Statements & Content Rows ***</p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+                <!-- END TWO COLUMNS FLUID/HYBRID 100% RESPONSIVE + MSO + CONTENT ROWS -->
+
+
+
+                <!-- ONE & TWO THIRDS COLUMNS EXAMPLE -->
+                <tr>
+                    <td style="padding: 10px 0 10px;">
+                        <table width="100%" style="border-spacing:0;" role="presentation">
+
+                            <tr>
+                                <td style="background-color: #f3e1dc;padding: 12px;">
+                                    <p style="text-align: center; font-size: 22px; margin: 0;">One & Two-Thirds Columns
+                                        Example</p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+                <!-- END ONE & TWO THIRDS COLUMN EXAMPLE -->
+
+
+            </table>
+
+            <!--[if mso]>
             </td>
             </tr>
             </table>
-                <![endif]-->
-            </table>
+         <![endif]-->
+
         </div>
+    </div>
+
 </body>
 
 </html>
+
+
+<!-- 
+Boat Image:
+https://i.ibb.co/C0ckzW1/boat.jpg
+https://mcusercontent.com/474f5b70c3b324277323d4c42/images/a63a4362-8abd-b993-d894-ab788fdc56b8.jpg
+https://raw.githubusercontent.com/w3newbie/html-email-mastery-images/main/layouts-and-elements/boat.jpg
+
+Computer Image:
+https://i.ibb.co/RD0sR6V/computer.png
+https://mcusercontent.com/474f5b70c3b324277323d4c42/images/3c61e337-eda9-c62d-ce8d-0074bfafe769.png
+https://raw.githubusercontent.com/w3newbie/html-email-mastery-images/main/layouts-and-elements/computer.png
+-->
